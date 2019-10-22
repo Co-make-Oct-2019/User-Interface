@@ -1,0 +1,114 @@
+.header-container {
+	margin: -7rem 0rem;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+
+
+	.header-image {
+		height: 100vh;
+		min-height: 100vh;
+		width: 100vw;
+		background: url("../img/mike-erskine-unsplash.jpg") no-repeat;
+		background-size: cover;
+
+		display: flex;
+		align-items: center;
+
+
+		.call-to-action {
+			position: absolute;
+			background: white;
+			height: 30rem;
+			width: 50rem;
+
+			display: flex;
+			flex-direction: column;
+			margin-left: 4rem;
+
+			border-radius: 0.3rem;
+			box-shadow: 0 1.6rem 4rem black;
+
+			.form-question, .find-neighborhood-form {
+				padding: 4rem 4rem 0rem;
+			}
+
+			.find-neighborhood-form {
+				height: 66vh;
+				display: flex;
+				flex-direction: column;
+
+				justify-content: space-around;
+				align-items: flex-end;
+				padding-top: 0rem;
+
+				input {
+					height: 5rem;
+					width: 42rem;
+				}
+
+				button {
+					height: 5rem;
+					width: 10rem;
+					border-radius: 0.3rem;
+					border: 0px solid white;
+					color: @button-fg-color;
+					background-color: @button-bg-color;
+
+					&:hover {
+						background-color: seagreen;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.container {
+	.explore {
+		height: 100%;
+		margin-top: 10rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.successes {
+		margin-top: 5rem;
+	}
+
+	.image-container {
+		height: 70%;
+		margin-top: 4rem;
+		display: flex;
+		justify-content: space-around;
+
+		.image-card {
+			height: 90%;
+			width: 23%;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			border-radius: 0.3rem;
+			box-shadow: 0 0.9rem 4rem grey;
+
+			img {
+				width: 100%;
+				height: 80%;
+			}
+
+			h6 {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	.case-studies {
+
+	}
+}

@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+input {
+  font-family: 'Ubuntu', sans-serif;
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+input {
+  font-size: 2rem;
+  line-height: 1.8;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+}
+input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+.container {
+  max-width: 152rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation-container {
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.navigation-container h1 {
+  padding: 4rem;
+}
+.navigation-container h1 a {
+  text-decoration: none;
+  color: white;
+}
+.navigation-container .navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 70vw;
+}
+.navigation-container .navigation a {
+  font-size: 1.8rem;
+}
+.navigation-container .navigation button {
+  display: none;
+}
+@media (max-width: 1170px) {
+  .navigation-container .navigation button {
+    display: block;
+    padding: 2.8rem;
+    font-size: 2.8rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+}
+.navigation-container .navigation .nav-item {
+  padding: 2.8rem;
+  margin: 0 1rem 0 0;
+  color: white;
+}
+.navigation-container .navigation .nav-item:hover {
+  border-bottom: 1px solid white;
+}
+@media (max-width: 1170px) {
+  .navigation-container .navigation .nav-item {
+    visibility: hidden;
+  }
+}
+.header-container {
+  margin: -7rem 0rem;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+.header-container .header-image {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  background: url("../img/mike-erskine-unsplash.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.header-container .header-image .call-to-action {
+  position: absolute;
+  background: white;
+  height: 30rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.6rem 4rem black;
+}
+.header-container .header-image .call-to-action .form-question,
+.header-container .header-image .call-to-action .find-neighborhood-form {
+  padding: 4rem 4rem 0rem;
+}
+.header-container .header-image .call-to-action .find-neighborhood-form {
+  height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 0rem;
+}
+.header-container .header-image .call-to-action .find-neighborhood-form input {
+  height: 5rem;
+  width: 42rem;
+}
+.header-container .header-image .call-to-action .find-neighborhood-form button {
+  height: 5rem;
+  width: 10rem;
+  border-radius: 0.3rem;
+  border: 0px solid white;
+  color: white;
+  background-color: mediumseagreen;
+}
+.header-container .header-image .call-to-action .find-neighborhood-form button:hover {
+  background-color: seagreen;
+}
+.container .explore {
+  height: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .successes {
+  margin-top: 5rem;
+}
+.container .image-container {
+  height: 70%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.container .image-container .image-card {
+  height: 90%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.9rem 4rem grey;
+}
+.container .image-container .image-card img {
+  width: 100%;
+  height: 80%;
+}
+.container .image-container .image-card h6 {
+  margin-bottom: 2rem;
+}
