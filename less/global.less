@@ -7,12 +7,21 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Ubuntu', sans-serif;
+html, body, input {
+  font-family: @ubuntu;
+}
+
+button {
+  font-family: @opensans;
+  font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: @russo;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
@@ -28,8 +37,21 @@ p {
   line-height: 1.4;
 }
 
+input {
+  font-size: 2.0rem;
+  line-height: 1.8;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+
+  &:focus {
+    outline: none;
+    border: 1px solid black;
+  }
+}
+
 .container {
-  max-width: 800px;
+  max-width: 152rem;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
