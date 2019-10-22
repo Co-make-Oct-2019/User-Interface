@@ -282,18 +282,18 @@ input:focus {
 .header-container .header-image .call-to-action .find-neighborhood-form button:hover {
   background-color: seagreen;
 }
-.container .explore {
+.container .explore-section {
   height: 100%;
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.container .successes {
+.container .success-section {
   margin-top: 5rem;
 }
 .container .image-container {
-  height: 70%;
+  height: 25rem;
   margin-top: 4rem;
   display: flex;
   justify-content: space-around;
@@ -314,7 +314,7 @@ input:focus {
   border-radius: 1rem 1rem 0 0;
 }
 .container .image-container .image-card h5 {
-  margin: 2rem;
+  padding: 1.5rem 0 3rem 2rem;
   color: grey;
 }
 .container .image-container .success {
