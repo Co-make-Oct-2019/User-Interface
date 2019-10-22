@@ -200,6 +200,19 @@ input:focus {
 .navigation-container .navigation a {
   font-size: 1.8rem;
 }
+.navigation-container .navigation button {
+  display: none;
+}
+@media (max-width: 1170px) {
+  .navigation-container .navigation button {
+    display: block;
+    padding: 2.8rem;
+    font-size: 2.8rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+}
 .navigation-container .navigation .nav-item {
   padding: 2.8rem;
   margin: 0 1rem 0 0;
@@ -208,17 +221,23 @@ input:focus {
 .navigation-container .navigation .nav-item:hover {
   border-bottom: 1px solid white;
 }
+@media (max-width: 1170px) {
+  .navigation-container .navigation .nav-item {
+    visibility: hidden;
+  }
+}
 .header-container {
-  margin: -7em 0em;
+  margin: -7rem 0rem;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
 }
 .header-container .header-image {
   height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background: url("../img/mike-erskine-unsplash.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
@@ -254,23 +273,31 @@ input:focus {
   width: 10rem;
   border-radius: 0.3rem;
   border: 0px solid white;
+  color: white;
   background-color: mediumseagreen;
 }
+.header-container .header-image .call-to-action .find-neighborhood-form button:hover {
+  background-color: seagreen;
+}
 .container .explore {
-  height: 35rem;
-  margin-top: 8rem;
+  height: 100%;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.container .successes {
+  margin-top: 5rem;
+}
 .container .image-container {
-  height: 26rem;
+  height: 70%;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-around;
 }
 .container .image-container .image-card {
-  height: 25rem;
-  width: 33rem;
+  height: 90%;
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

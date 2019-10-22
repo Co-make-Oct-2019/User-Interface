@@ -1,14 +1,16 @@
 .header-container {
-	margin: -7em 0em;
+	margin: -7rem 0rem;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	z-index: -1;
+
 
 	.header-image {
 		height: 100vh;
+		min-height: 100vh;
 		width: 100vw;
 		background: url("../img/mike-erskine-unsplash.jpg") no-repeat;
-		background-size: 100%;
+		background-size: cover;
 
 		display: flex;
 		align-items: center;
@@ -50,8 +52,12 @@
 					width: 10rem;
 					border-radius: 0.3rem;
 					border: 0px solid white;
+					color: @button-fg-color;
+					background-color: @button-bg-color;
 
-					background-color: @button-color;
+					&:hover {
+						background-color: seagreen;
+					}
 				}
 			}
 		}
@@ -61,24 +67,27 @@
 
 .container {
 	.explore {
-		height: 35rem;
-		margin-top: 8rem;
+		height: 100%;
+		margin-top: 10rem;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 	}
 
-	.image-container {
-		height: 26rem;
+	.successes {
+		margin-top: 5rem;
+	}
 
+	.image-container {
+		height: 70%;
+		margin-top: 4rem;
 		display: flex;
 		justify-content: space-around;
 
-
 		.image-card {
-			height: 25rem;
-			width: 33rem;
+			height: 90%;
+			width: 23%;
 
 			display: flex;
 			flex-direction: column;
@@ -97,7 +106,6 @@
 				margin-bottom: 2rem;
 			}
 		}
-
 	}
 
 	.case-studies {
