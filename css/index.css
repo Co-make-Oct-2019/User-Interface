@@ -282,44 +282,119 @@ input:focus {
 .header-container .header-image .call-to-action .find-neighborhood-form button:hover {
   background-color: seagreen;
 }
-.container .explore-section {
-  height: 100%;
-  margin-top: 10rem;
+.get-involved {
+  width: 100vw;
+  margin: 4rem 0 0 0;
+}
+.get-involved .image-to-get-involved {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../img/hatham-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 17%;
+}
+.get-involved .image-to-get-involved h2,
+.get-involved .image-to-get-involved button {
+  margin: 0 0 2rem 2rem;
+  color: white;
+}
+.get-involved .image-to-get-involved button {
+  height: 5rem;
+  width: 12rem;
+  border-radius: 0.3rem;
+  border: 0px solid white;
+  color: white;
+  background-color: mediumseagreen;
+}
+.get-involved .image-to-get-involved button:hover {
+  background-color: seagreen;
+}
+.container .base-section {
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.container .explore-section {
+  margin-top: 10rem;
+}
 .container .success-section {
-  margin-top: 5rem;
+  margin: 3rem 0;
+  height: 40rem;
+}
+.container .success-section h3 {
+  margin: 0 0 3rem 0;
 }
 .container .image-container {
   height: 25rem;
-  margin-top: 4rem;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
-.container .image-container .image-card {
-  height: 90%;
-  width: 23%;
+.container .image-container a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.container .image-container a .image-card {
+  height: 22rem;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   border-radius: 1rem;
   box-shadow: 0 0.3rem 4rem lightgrey;
 }
-.container .image-container .image-card img {
+.container .image-container a .image-card img {
   width: 100%;
   height: 80%;
   border-radius: 1rem 1rem 0 0;
 }
-.container .image-container .image-card h5 {
-  padding: 1.5rem 0 3rem 2rem;
+.container .image-container a .image-card h5 {
+  padding: 2rem 0 3rem 2rem;
   color: grey;
 }
-.container .image-container .success {
+.container .image-container a .success-card {
+  height: 28rem;
   box-shadow: none;
 }
-.container .image-container .success img {
+.container .image-container a .success-card img {
+  width: 100%;
+  height: 100%;
   border-radius: 0;
+}
+.container .image-container a .success-card h5 {
+  position: relative;
+  top: -15rem;
+  color: white;
+}
+.container .show-more {
+  family-font: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  color: mediumseagreen;
+}
+footer .navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .navigation-container .left-side {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 2rem;
+}
+footer .navigation-container a {
+  color: black;
+}
+footer .navigation-container .navigation-footer {
+  margin: 0 2rem 0 0;
+}
+footer .navigation-container .navigation-footer .nav-item {
+  color: black;
+  text-decoration: underline;
+  margin: 0 1rem 0 1rem;
 }
