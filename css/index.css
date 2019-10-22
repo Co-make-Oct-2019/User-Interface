@@ -158,3 +158,33 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation-container {
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-container h1 {
+  padding: 4rem;
+  font-size: 4rem;
+}
+.navigation-container h1 a {
+  text-decoration: none;
+  color: black;
+}
+.navigation-container .navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 45vw;
+}
+.navigation-container .navigation a {
+  font-size: 1.8rem;
+}
+.navigation-container .navigation .nav-item {
+  padding: 2.8rem;
+  margin: 0 1rem 0 0;
+}
+.navigation-container .navigation .nav-item:hover {
+  border-bottom: 1px solid white;
+}
