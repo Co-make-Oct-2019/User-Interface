@@ -204,6 +204,7 @@ input:focus {
 }
 .navigation-container .navigation a {
   font-size: 1.8rem;
+  text-decoration: none;
 }
 .navigation-container .navigation button {
   display: none;
@@ -466,14 +467,9 @@ input:focus {
 }
 @media (max-width: 1170px) {
   .container .success-section .success-container {
-    flex-wrap: nowrap;
-    overflow-x: auto;
     background: green;
-    height: 60rem;
-    -webkit-overflow-scrolling: touch;
-  }
-  .container .success-section .success-container::-webkit-scrollbar {
-    display: none;
+    height: 100rem;
+    flex-wrap: wrap;
   }
 }
 .container .success-section .success-container a {
@@ -499,13 +495,13 @@ input:focus {
   .container .success-section .success-container .success-card {
     height: 15rem;
     width: 15rem;
-    whites-pace: nowrap;
     text-align: center;
   }
 }
 @media (max-width: 1170px) {
   .container .success-section .success-container .success-card {
-    flex: 0 0 auto;
+    height: 10rem;
+    width: 10rem;
   }
 }
 .container .success-section .success-container .success-card h5 {

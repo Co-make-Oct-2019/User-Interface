@@ -255,15 +255,9 @@
 			}
 
 			@media @tablet {
-				flex-wrap: nowrap;
-				overflow-x: auto;
 				background: green;
-				height: 60rem;
-
-				-webkit-overflow-scrolling: touch;
-				&::-webkit-scrollbar {
-					display:none
-				}
+				height: 100rem;
+				flex-wrap: wrap;
 			}
 
 			a {
@@ -286,12 +280,12 @@
 				@media @success-cities-1550px {
 					height: 15rem;
 					width: 15rem;
-					whites-pace: nowrap;
 					text-align: center;
 				}
 
 				@media @tablet {
-					flex: 0 0 auto;
+					height: 10rem;
+					width: 10rem;
 				}
 
 				h5 {
