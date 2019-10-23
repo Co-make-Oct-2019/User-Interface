@@ -144,21 +144,24 @@ button {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-family: 'Russo One', sans-serif;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 input {
@@ -173,13 +176,15 @@ input:focus {
   border: 1px solid black;
 }
 .container {
-  max-width: 152rem;
+  max-width: 100%;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 .navigation-container {
   width: 100vw;
   height: 7rem;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,14 +232,14 @@ input:focus {
   }
 }
 .header-container {
-  margin: -7rem 0rem;
+  margin: 0rem;
   height: 100vh;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
+  background: green;
 }
 .header-container .header-image {
   height: 100vh;
-  min-height: 100vh;
   width: 100vw;
   background: url("../img/mike-erskine-unsplash.jpg") no-repeat;
   background-size: cover;
@@ -279,36 +284,110 @@ input:focus {
 .header-container .header-image .call-to-action .find-neighborhood-form button:hover {
   background-color: seagreen;
 }
-.container .explore {
-  height: 100%;
-  margin-top: 10rem;
+.get-involved {
+  width: 100vw;
+  margin: 4rem 0 0 0;
+}
+.get-involved .image-to-get-involved {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../img/hatham-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 17%;
+}
+.get-involved .image-to-get-involved h2,
+.get-involved .image-to-get-involved button {
+  margin: 0 0 2rem 2rem;
+  color: white;
+}
+.get-involved .image-to-get-involved button {
+  height: 5rem;
+  width: 12rem;
+  border-radius: 0.3rem;
+  border: 0px solid white;
+  color: white;
+  background-color: mediumseagreen;
+}
+.get-involved .image-to-get-involved button:hover {
+  background-color: seagreen;
+}
+.container {
+  height: 40rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1170px) {
+  .container {
+    height: 40rem;
+  }
+}
+.container .card-section {
+  background: pink;
+  height: 35rem;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.container .successes {
-  margin-top: 5rem;
-}
-.container .image-container {
-  height: 70%;
-  margin-top: 4rem;
+.container .card-section .card-container {
+  background: yellow;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
-.container .image-container .image-card {
-  height: 90%;
-  width: 23%;
+.container .card-section .card-container .card {
+  background: green;
+  height: 30rem;
+  width: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  border-radius: 0.3rem;
-  box-shadow: 0 0.9rem 4rem grey;
+  text-decoration: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 4rem lightgrey;
 }
-.container .image-container .image-card img {
-  width: 100%;
-  height: 80%;
+.container .card-section .card-container .card .image {
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 1rem 1rem 0 0;
 }
-.container .image-container .image-card h6 {
-  margin-bottom: 2rem;
+.container .card-section .card-container .card img {
+  display: block;
+  overflow: hidden;
+  object-fit: contain;
+}
+.container .card-section .card-container .card h5 {
+  padding: 3rem 2rem;
+  color: grey;
+}
+.container .show-more {
+  family-font: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  color: mediumseagreen;
+}
+footer .navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .navigation-container .left-side {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 2rem;
+}
+footer .navigation-container a {
+  color: black;
+}
+footer .navigation-container .navigation-footer {
+  margin: 0 2rem 0 0;
+}
+footer .navigation-container .navigation-footer .nav-item {
+  color: black;
+  text-decoration: underline;
+  margin: 0 1rem 0 1rem;
 }
