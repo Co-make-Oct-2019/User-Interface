@@ -243,8 +243,19 @@ input:focus {
   width: 100vw;
   background: url("../img/mike-erskine-unsplash.jpg") no-repeat;
   background-size: cover;
+  background-position: 100% 100%;
   display: flex;
   align-items: center;
+}
+@media (max-width: 1700px) {
+  .header-container .header-image {
+    background-position: center;
+  }
+}
+@media (max-width: 1170px) {
+  .header-container .header-image {
+    background-position: center;
+  }
 }
 .header-container .header-image .call-to-action {
   position: absolute;
@@ -287,6 +298,11 @@ input:focus {
 .get-involved {
   width: 100vw;
   margin: 4rem 0 0 0;
+}
+@media (max-width: 1170px) {
+  .get-involved {
+    margin: 20rem 0 0 0;
+  }
 }
 .get-involved .image-to-get-involved {
   height: 50vh;
@@ -333,6 +349,17 @@ input:focus {
   flex-direction: column;
   justify-content: space-around;
 }
+@media (max-width: 1700px) {
+  .container .card-section {
+    width: 100%;
+  }
+}
+@media (max-width: 1170px) {
+  .container .card-section {
+    margin: 20rem 0 0 0;
+    height: 60rem;
+  }
+}
 .container .card-section .card-container {
   background: yellow;
   width: 100%;
@@ -340,6 +367,16 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1700px) {
+  .container .card-section .card-container {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1170px) {
+  .container .card-section .card-container {
+    flex-direction: column;
+  }
 }
 .container .card-section .card-container .card {
   background: green;
@@ -352,10 +389,30 @@ input:focus {
   border-radius: 1rem;
   box-shadow: 0 0.3rem 4rem lightgrey;
 }
+@media (max-width: 1700px) {
+  .container .card-section .card-container .card {
+    height: 20rem;
+    width: 22rem;
+  }
+}
+@media (max-width: 1170px) {
+  .container .card-section .card-container .card {
+    flex-direction: row;
+    height: 10rem;
+    width: 90%;
+  }
+}
 .container .card-section .card-container .card .image {
   max-width: 100%;
   max-height: 80%;
   border-radius: 1rem 1rem 0 0;
+}
+@media (max-width: 1170px) {
+  .container .card-section .card-container .card .image {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
 }
 .container .card-section .card-container .card img {
   display: block;
