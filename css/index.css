@@ -236,7 +236,6 @@ input:focus {
   height: 100vh;
   width: 100%;
   z-index: 0;
-  background: green;
 }
 .header-container .header-image {
   height: 100vh;
@@ -445,6 +444,22 @@ input:focus {
     padding: 4rem 2rem;
     font-size: 1.8rem;
   }
+}
+.container .card-section .card-container a {
+  text-decoration: none;
+}
+.container .card-section .card-container .success-card {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/megan-markham-austin-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.container .card-section .card-container .success-card h5 {
+  color: white;
 }
 .container .show-more {
   family-font: 'Open Sans', sans-serif;
