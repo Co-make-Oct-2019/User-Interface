@@ -1,0 +1,108 @@
+.navigation-about {
+	background: black;
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.about-header {
+	height: 50vh;
+	padding: 5rem;
+
+	display: flex;
+	justify-content: space-around;
+
+	@media @tablet {
+		justify-content: center;
+		padding: 0;
+	}
+
+	.container {
+		margin-top: 0rem;
+	}
+
+	.about-header-text {
+		height: 100%;
+		width: 50%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 0 10rem 0 0;
+
+		@media @tablet {
+			padding: 0;
+		}
+
+		h1 {
+			color: @button-bg-color;
+		}
+		h2 {
+			color: @button-bg-hover-color;
+		}
+
+		p {
+			height: 15rem;
+			flex-shrink: 0
+		}
+	}
+
+	.about-header-image {
+		height: 25rem;
+		width: 50%;
+		.background-image("../img/marvin-meyer-team-unsplash.jpg");
+		background-size: cover;
+		background-position: 100% 100%;
+
+		@media @tablet {
+			display: none;
+		
+		}
+
+	}
+}
+
+.about-section {
+	height: 100rem;
+}
+
+.about-card {
+	display: flex;
+	flex-direction: column;
+
+	@media @tablet-pro {
+		border-radius: 50rem;
+	}
+	
+	p {
+		color: @button-fg-color;
+	}
+}
+
+
+#dino1 {
+	.background-image("../img/dino-1.png", 50%, 50%);
+	background-size: cover;
+}
+
+#dino2 {
+	.background-image("../img/dino-2.png", 50%, 50%);
+	background-size: cover;
+}
+
+#dino3 {
+	.background-image("../img/dino-3.png", 50%, 50%);
+	background-size: cover;
+}
+
+#dino4 {
+	.background-image("../img/dino-4.png", 50%, 50%);
+	background-size: cover;
+}
+
+#dino5 {
+	.background-image("../img/dino-5.png", 50%, 50%);
+	background-size: cover;
+}

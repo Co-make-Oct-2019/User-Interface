@@ -232,6 +232,26 @@ input:focus {
     visibility: hidden;
   }
 }
+footer .navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .navigation-container .left-side {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 2rem;
+}
+footer .navigation-container a {
+  color: black;
+}
+footer .navigation-container .navigation-footer {
+  margin: 0 2rem 0 0;
+}
+footer .navigation-container .navigation-footer .nav-item {
+  color: black;
+  text-decoration: underline;
+  margin: 0 1rem 0 1rem;
+}
 .header-container {
   margin: 0rem;
   height: 100vh;
@@ -512,23 +532,99 @@ input:focus {
   font-size: 1.8rem;
   color: mediumseagreen;
 }
-footer .navigation-container {
-  display: flex;
-  justify-content: space-between;
+.navigation-about {
+  background: black;
 }
-footer .navigation-container .left-side {
+.navigation-about a:hover {
+  text-decoration: underline;
+}
+.about-header {
+  height: 50vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1170px) {
+  .about-header {
+    justify-content: center;
+    padding: 0;
+  }
+}
+.about-header .container {
+  margin-top: 0rem;
+}
+.about-header .about-header-text {
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 2rem;
+  justify-content: center;
+  padding: 0 10rem 0 0;
 }
-footer .navigation-container a {
-  color: black;
+@media (max-width: 1170px) {
+  .about-header .about-header-text {
+    padding: 0;
+  }
 }
-footer .navigation-container .navigation-footer {
-  margin: 0 2rem 0 0;
+.about-header .about-header-text h1 {
+  color: mediumseagreen;
 }
-footer .navigation-container .navigation-footer .nav-item {
-  color: black;
-  text-decoration: underline;
-  margin: 0 1rem 0 1rem;
+.about-header .about-header-text h2 {
+  color: seagreen;
+}
+.about-header .about-header-text p {
+  height: 15rem;
+  flex-shrink: 0;
+}
+.about-header .about-header-image {
+  height: 25rem;
+  width: 50%;
+  background: url("../img/marvin-meyer-team-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+@media (max-width: 1170px) {
+  .about-header .about-header-image {
+    display: none;
+  }
+}
+.about-section {
+  height: 100rem;
+}
+.about-card {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1700px) {
+  .about-card {
+    border-radius: 50rem;
+  }
+}
+.about-card p {
+  color: white;
+}
+#dino1 {
+  background: url("../img/dino-1.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#dino2 {
+  background: url("../img/dino-2.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#dino3 {
+  background: url("../img/dino-3.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#dino4 {
+  background: url("../img/dino-4.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#dino5 {
+  background: url("../img/dino-5.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
