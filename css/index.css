@@ -342,7 +342,6 @@ input:focus {
   }
 }
 .container .card-section {
-  background: pink;
   height: 35rem;
   width: 95%;
   display: flex;
@@ -361,7 +360,6 @@ input:focus {
   }
 }
 .container .card-section .card-container {
-  background: yellow;
   width: 100%;
   height: 100%;
   display: flex;
@@ -379,7 +377,6 @@ input:focus {
   }
 }
 .container .card-section .card-container .card {
-  background: green;
   height: 30rem;
   width: 32rem;
   display: flex;
@@ -397,9 +394,9 @@ input:focus {
 }
 @media (max-width: 1170px) {
   .container .card-section .card-container .card {
-    flex-direction: row;
     height: 10rem;
     width: 90%;
+    flex-direction: row;
   }
 }
 .container .card-section .card-container .card .image {
@@ -422,6 +419,32 @@ input:focus {
 .container .card-section .card-container .card h5 {
   padding: 3rem 2rem;
   color: grey;
+  border-radius: 0 0 1rem 1rem;
+}
+@media (max-width: 1170px) {
+  .container .card-section .card-container .card h5 {
+    border-radius: 0 1rem 1rem 0;
+    padding: 4rem 10rem 4rem 10rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 800px) {
+  .container .card-section .card-container .card h5 {
+    padding: 4rem 8rem 4rem 8rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .container .card-section .card-container .card h5 {
+    padding: 4rem 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .card-section .card-container .card h5 {
+    padding: 4rem 2rem;
+    font-size: 1.8rem;
+  }
 }
 .container .show-more {
   family-font: 'Open Sans', sans-serif;
