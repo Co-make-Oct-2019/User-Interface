@@ -1,5 +1,5 @@
-.background-image(@url) {
+.background-image(@url, @x-position:100%, @y-position:100%) {
 	background: url(@url) no-repeat;
-	background-position: 100% 100%;
+	background-position: @x-position @y-position;
 	background-size: cover;
 }
