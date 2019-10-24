@@ -19,7 +19,7 @@
 			<a href="#" class="nav-item">Help</a>
 			<a href="https://frontend.co-make.now.sh/signup" class="nav-item">Sign Up</a>
 			<a href="https://frontend.co-make.now.sh" class="nav-item">Log In</a>
-			<button><i class="fas fa-bars"></i></button>
+			<button onclick="toggleMenu('nav-item')"><i class="fas fa-bars"></i></button>
 		</nav>
 	</div> <!-- navigation container end here -->
 	<header class="header-container">
@@ -123,4 +123,12 @@
 		</div>
 	</footer>
 </body>
+<script type="text/javascript">
+	
+	function toggleMenu(identifier) {
+		const menu = document.getElementsByClassName("nav-item");
+		menu.style.visibility = menu.style.visibility == "none" ? "visible" : "none";
+	}
+
+</script>
 </html>
