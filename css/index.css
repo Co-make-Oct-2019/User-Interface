@@ -198,7 +198,7 @@ input:focus {
     padding: 1rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375) {
   .navigation-container h1 {
     padding: 0rem;
   }
@@ -227,6 +227,11 @@ input:focus {
     border: none;
     color: white;
     background-color: transparent;
+  }
+}
+@media (max-width: 375) {
+  .navigation-container .navigation button {
+    padding: 0;
   }
 }
 .navigation-container .navigation .nav-item {
@@ -262,6 +267,11 @@ footer .navigation-container .left-side {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 2rem;
+}
+@media (max-width: 630px) {
+  footer .navigation-container .left-side {
+    margin: 0;
+  }
 }
 @media (max-width: 840px) {
   footer .navigation-container .left-side .made-with-love {
@@ -342,6 +352,12 @@ footer .navigation-container .navigation-footer .nav-item {
     box-shadow: 0 0 0 transparent;
     top: 27rem;
     width: 100%;
+  }
+}
+@media (max-width: 375) {
+  .header-container .header-image .call-to-action {
+    top: 20rem;
+    width: 90%;
   }
 }
 .header-container .header-image .call-to-action .form-question,
@@ -614,6 +630,12 @@ footer .navigation-container .navigation-footer .nav-item {
   .container .success-section .success-container .success-card {
     height: 30rem;
     width: 35rem;
+  }
+}
+@media (max-width: 375) {
+  .container .success-section .success-container .success-card {
+    height: 30rem;
+    width: 25rem;
   }
 }
 .container .success-section .success-container .success-card h5 {
