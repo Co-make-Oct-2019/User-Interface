@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu|Open+Sans:700" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/10453cf20e.js" crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -123,4 +124,11 @@
 		</div>
 	</footer>
 </body>
+<script>
+	$(document).ready(function() {
+		$("#show_hide").click(function() {
+			$(".menu").toggle(10000)
+		})
+	})
+</script>
 </html>

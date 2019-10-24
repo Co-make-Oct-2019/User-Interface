@@ -239,7 +239,7 @@ input:focus {
 }
 @media (max-width: 630px) {
   footer {
-    margin: 35rem 0 0 0;
+    margin: 5rem 0 0 0;
   }
 }
 footer .navigation-container {
@@ -270,7 +270,7 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 840px) {
   footer .navigation-container .navigation-footer .nav-item {
-    margin: 0 0 0 0;
+    margin: auto;
   }
 }
 .header-container {
@@ -314,7 +314,7 @@ footer .navigation-container .navigation-footer .nav-item {
     margin-left: 0;
     position: relative;
     box-shadow: 0 0 0 transparent;
-    top: 26rem;
+    top: 27rem;
     width: 100%;
   }
 }
@@ -361,7 +361,7 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 1170px) {
   .get-involved {
-    margin: 25rem 0 0 0;
+    margin: 5rem 0 0 0;
   }
 }
 .get-involved .image-to-get-involved {
@@ -390,16 +390,10 @@ footer .navigation-container .navigation-footer .nav-item {
   background-color: seagreen;
 }
 .container {
-  height: 40rem;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 1170px) {
-  .container {
-    height: 40rem;
-  }
 }
 .container .card-section {
   height: 35rem;
@@ -410,7 +404,7 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 1170px) {
   .container .card-section {
-    margin: 20rem 0 0 0;
+    margin: 5rem 0 0 0;
     height: 60rem;
   }
 }
@@ -509,15 +503,11 @@ footer .navigation-container .navigation-footer .nav-item {
   justify-content: space-around;
 }
 @media (max-width: 1170px) {
-  .container .success-section {
-    margin: 0 0 0 0;
-  }
 }
 @media (max-width: 630px) {
   .container .success-section {
     height: 70rem;
     justify-content: center;
-    margin: 35rem 0 0 0;
   }
 }
 .container .success-section .success-container {
@@ -535,7 +525,6 @@ footer .navigation-container .navigation-footer .nav-item {
 @media (max-width: 1170px) {
   .container .success-section .success-container {
     height: 100rem;
-    flex-wrap: wrap;
   }
 }
 @media (max-width: 840px) {
@@ -670,16 +659,19 @@ footer .navigation-container .navigation-footer .nav-item {
     display: none;
   }
 }
-.about-section {
-  height: 100rem;
+@media phone-medium {
+  .container .about-section {
+    height: 200rem;
+  }
 }
 .about-card {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1700px) {
+@media (max-width: 840px) {
   .about-card {
-    border-radius: 50rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
 .about-card p {

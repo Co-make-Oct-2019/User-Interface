@@ -64,16 +64,28 @@
 	}
 }
 
-.about-section {
-	height: 100rem;
+.container {
+	.about-section {
+
+		@media phone-medium {
+			height: 200rem;
+		}
+	}
+}
+
+.about-container {
+	@media @tablet {
+		
+	}
 }
 
 .about-card {
 	display: flex;
 	flex-direction: column;
 
-	@media @tablet-pro {
-		border-radius: 50rem;
+	@media @phone-large {
+		width: 4rem;
+		height: 4rem;
 	}
 	
 	p {
