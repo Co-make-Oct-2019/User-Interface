@@ -350,14 +350,11 @@ footer .navigation-container .navigation-footer .nav-item {
     margin-left: 0;
     position: relative;
     box-shadow: 0 0 0 transparent;
-    top: 20rem;
+    top: 27rem;
     width: 100%;
   }
 }
 @media (max-width: 630px) {
-  .header-container .header-image .call-to-action {
-    top: 22rem;
-  }
 }
 @media (max-width: 500px) {
   .header-container .header-image .call-to-action {
