@@ -36,6 +36,10 @@
 			padding: 0;
 		}
 
+		@media @phone-medium {
+			width: 80%;
+		}
+
 		h1 {
 			color: @button-bg-color;
 		}
@@ -67,8 +71,9 @@
 .container {
 	.about-section {
 
-		@media phone-medium {
-			height: 200rem;
+		@media @phone-medium {
+			height: 120rem;
+			justify-content: space-around;
 		}
 	}
 }
