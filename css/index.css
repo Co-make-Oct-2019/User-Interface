@@ -182,7 +182,7 @@ input:focus {
   margin: 0 auto;
 }
 .navigation-container {
-  width: 100vw;
+  width: 100%;
   height: 7rem;
   position: absolute;
   display: flex;
@@ -192,6 +192,11 @@ input:focus {
 }
 .navigation-container h1 {
   padding: 4rem;
+}
+@media (max-width: 840px) {
+  .navigation-container h1 {
+    padding: 1rem;
+  }
 }
 .navigation-container h1 a {
   text-decoration: none;
@@ -232,7 +237,13 @@ input:focus {
     visibility: hidden;
   }
 }
+@media (max-width: 630px) {
+  footer {
+    margin: 35rem 0 0 0;
+  }
+}
 footer .navigation-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -240,6 +251,11 @@ footer .navigation-container .left-side {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 2rem;
+}
+@media (max-width: 840px) {
+  footer .navigation-container .left-side .made-with-love {
+    display: none;
+  }
 }
 footer .navigation-container a {
   color: black;
@@ -251,6 +267,11 @@ footer .navigation-container .navigation-footer .nav-item {
   color: black;
   text-decoration: underline;
   margin: 0 1rem 0 1rem;
+}
+@media (max-width: 840px) {
+  footer .navigation-container .navigation-footer .nav-item {
+    margin: 0 0 0 0;
+  }
 }
 .header-container {
   margin: 0rem;
@@ -288,6 +309,15 @@ footer .navigation-container .navigation-footer .nav-item {
   border-radius: 0.3rem;
   box-shadow: 0 1.6rem 4rem black;
 }
+@media (max-width: 840px) {
+  .header-container .header-image .call-to-action {
+    margin-left: 0;
+    position: relative;
+    box-shadow: 0 0 0 transparent;
+    top: 26rem;
+    width: 100%;
+  }
+}
 .header-container .header-image .call-to-action .form-question,
 .header-container .header-image .call-to-action .find-neighborhood-form {
   padding: 4rem 4rem 0rem;
@@ -300,9 +330,19 @@ footer .navigation-container .navigation-footer .nav-item {
   align-items: flex-end;
   padding-top: 0rem;
 }
+@media (max-width: 840px) {
+  .header-container .header-image .call-to-action .find-neighborhood-form {
+    align-items: stretch;
+  }
+}
 .header-container .header-image .call-to-action .find-neighborhood-form input {
   height: 5rem;
   width: 42rem;
+}
+@media (max-width: 840px) {
+  .header-container .header-image .call-to-action .find-neighborhood-form input {
+    width: 100%;
+  }
 }
 .header-container .header-image .call-to-action .find-neighborhood-form button {
   height: 5rem;
@@ -473,6 +513,13 @@ footer .navigation-container .navigation-footer .nav-item {
     margin: 0 0 0 0;
   }
 }
+@media (max-width: 630px) {
+  .container .success-section {
+    height: 70rem;
+    justify-content: center;
+    margin: 35rem 0 0 0;
+  }
+}
 .container .success-section .success-container {
   width: 100%;
   height: 100%;
@@ -487,9 +534,18 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 1170px) {
   .container .success-section .success-container {
-    background: green;
     height: 100rem;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 840px) {
+  .container .success-section .success-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 630px) {
+  .container .success-section .success-container {
+    flex-direction: column;
   }
 }
 .container .success-section .success-container a {
@@ -518,14 +574,40 @@ footer .navigation-container .navigation-footer .nav-item {
     text-align: center;
   }
 }
-@media (max-width: 1170px) {
+@media (max-width: 840px) {
   .container .success-section .success-container .success-card {
-    height: 10rem;
-    width: 10rem;
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 630px) {
+  .container .success-section .success-container .success-card {
+    height: 30rem;
+    width: 35rem;
   }
 }
 .container .success-section .success-container .success-card h5 {
   color: white;
+}
+@media (max-width: 1170px) {
+  .container .success-section .success-container #new-mexico {
+    display: none;
+  }
+}
+@media (max-width: 1170px) {
+  .container .success-section .success-container #miami {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .container .success-section .success-container #oregon {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .container .success-section .success-container #maryland {
+    display: none;
+  }
 }
 .container .show-more {
   family-font: 'Open Sans', sans-serif;

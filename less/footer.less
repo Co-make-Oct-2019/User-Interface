@@ -1,7 +1,11 @@
 footer {
+
+	@media @phone-medium {
+		margin: 35rem 0 0 0;
+	}
 	
 	.navigation-container {
-
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 
@@ -9,6 +13,12 @@ footer {
 			display: flex;
 			flex-direction: column;
 			margin: 0 0 0 2rem;
+
+			.made-with-love {
+				@media @phone-large {
+					display: none;
+				}
+			}
 		}
 
 		a {
@@ -16,13 +26,16 @@ footer {
 		}
 		
 		.navigation-footer {
-			
 			margin: 0 2rem 0 0;
 
 			.nav-item {
 				color: black;
 				text-decoration: underline;
 				margin: 0 1rem 0 1rem;
+
+				@media @phone-large {
+					margin: 0 0 0 0;
+				}
 			}
 		}
 	}

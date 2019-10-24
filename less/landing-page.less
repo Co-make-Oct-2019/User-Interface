@@ -36,6 +36,14 @@
 			border-radius: 0.3rem;
 			box-shadow: 0 1.6rem 4rem black;
 
+			@media @phone-large {
+				margin-left: 0;
+				position: relative;
+				box-shadow: 0 0 0 transparent;
+				top: 26rem;
+				width: 100%;
+			}
+
 			.form-question, .find-neighborhood-form {
 				padding: 4rem 4rem 0rem;
 			}
@@ -49,9 +57,18 @@
 				align-items: flex-end;
 				padding-top: 0rem;
 
+				@media @phone-large {
+					align-items: stretch;
+				}
+
+
 				input {
 					height: 5rem;
 					width: 42rem;
+
+					@media @phone-large {
+						width: 100%;
+					}
 				}
 
 				button {
@@ -241,6 +258,12 @@
 			margin: 0 0 0 0;
 		}
 
+		@media @phone-medium {
+			height: 70rem;
+			justify-content: center;
+			margin: 35rem 0 0 0;
+		}
+
 		.success-container {
 			width: 100%;
 			height: 100%;
@@ -249,15 +272,21 @@
 			justify-content: space-between;
 			align-items: center;
 
-
 			@media @tablet-pro {
 				justify-content: space-around;
 			}
 
 			@media @tablet {
-				background: green;
 				height: 100rem;
 				flex-wrap: wrap;
+			}
+
+			@media @phone-large {
+				justify-content: center;
+			}
+
+			@media @phone-medium {
+				flex-direction: column;
 			}
 
 			a {
@@ -283,15 +312,45 @@
 					text-align: center;
 				}
 
-				@media @tablet {
-					height: 10rem;
-					width: 10rem;
+				@media @phone-large {
+					height: 25rem;
+					width: 25rem;
+				}
+
+				@media @phone-medium {
+					height: 30rem;
+					width: 35rem;
 				}
 
 				h5 {
 					color: @button-fg-color;
 				}
 			}
+
+			#new-mexico {
+				@media @tablet {
+					display: none;
+				}
+			}
+
+			#miami {
+				@media @tablet {
+					display: none;
+				}
+			}
+
+			#oregon {
+				@media @phone-large {
+					display: none;
+				}
+			}
+
+			#maryland {
+				@media @phone-large {
+					display: none;
+				}
+			}
+
 		} // success container
 	}
 
