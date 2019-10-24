@@ -472,6 +472,8 @@ footer .navigation-container .navigation-footer .nav-item {
 .container .card-section .card-container .card .image {
   max-width: 100%;
   max-height: 80%;
+  height: 28rem;
+  width: 32rem;
   border-radius: 1rem 1rem 0 0;
 }
 @media (max-width: 1170px) {
@@ -481,10 +483,25 @@ footer .navigation-container .navigation-footer .nav-item {
     border-radius: 1rem 0 0 1rem;
   }
 }
-.container .card-section .card-container .card img {
-  display: block;
-  overflow: hidden;
-  object-fit: contain;
+.container .card-section .card-container .card #street-repair {
+  background: url("../img/marc-olivier-jodoin-pothole-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.container .card-section .card-container .card #dumping {
+  background: url("../img/john-cameron-trash-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.container .card-section .card-container .card #graffiti {
+  background: url("../img/red-mirror-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.container .card-section .card-container .card #vehicle {
+  background: url("../img/photo-abandoned-car.jpeg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
 }
 .container .card-section .card-container .card h5 {
   padding: 3rem 2rem;
@@ -495,25 +512,26 @@ footer .navigation-container .navigation-footer .nav-item {
   .container .card-section .card-container .card h5 {
     border-radius: 0 1rem 1rem 0;
     padding: 4rem 10rem 4rem 10rem;
-    text-align: center;
-    font-size: 4rem;
+    text-align: right;
+    font-size: 3rem;
   }
 }
 @media (max-width: 840px) {
   .container .card-section .card-container .card h5 {
     padding: 4rem 8rem 4rem 8rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 630px) {
   .container .card-section .card-container .card h5 {
     padding: 4rem 4rem;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 500px) {
   .container .card-section .card-container .card h5 {
     padding: 4rem 2rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 .container .success-section {
@@ -567,9 +585,6 @@ footer .navigation-container .navigation-footer .nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../img/megan-markham-austin-unsplash.jpg") no-repeat;
-  background-position: 100% 100%;
-  background-size: cover;
 }
 @media (max-width: 1700px) {
   .container .success-section .success-container .success-card {
@@ -599,23 +614,53 @@ footer .navigation-container .navigation-footer .nav-item {
 .container .success-section .success-container .success-card h5 {
   color: white;
 }
-@media (max-width: 1170px) {
-  .container .success-section .success-container #new-mexico {
+.container .success-section .success-container #austin {
+  background: url("../img/megan-markham-austin-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.container .success-section .success-container #portland {
+  background: url("../img/tuce-portland-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+@media (max-width: 840px) {
+  .container .success-section .success-container #portland {
     display: none;
   }
+}
+.container .success-section .success-container #miami {
+  background: url("../img/steven-pahel-miami-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
 }
 @media (max-width: 1170px) {
   .container .success-section .success-container #miami {
     display: none;
   }
 }
+.container .success-section .success-container #baltimore {
+  background: url("../img/erin-white-baltimore-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
 @media (max-width: 840px) {
-  .container .success-section .success-container #oregon {
+  .container .success-section .success-container #baltimore {
     display: none;
   }
 }
-@media (max-width: 840px) {
-  .container .success-section .success-container #maryland {
+.container .success-section .success-container #boulder {
+  background: url("../img/simon-goetz-boulder-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+.container .success-section .success-container #santa-fe {
+  background: url("../img/alex-george-santafe-unsplash.jpg") no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+@media (max-width: 1170px) {
+  .container .success-section .success-container #santa-fe {
     display: none;
   }
 }
