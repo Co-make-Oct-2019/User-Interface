@@ -40,14 +40,26 @@
 				margin-left: 0;
 				position: relative;
 				box-shadow: 0 0 0 transparent;
-				top: 27rem;
+				top: 20rem;
 				width: 100%;
 			}
 
-			@media @phone-xtra-small {
-				top: 20rem;
-				width: 90%;
+			@media @phone-medium {
+				top: 22rem;
 			}
+
+			@media @phone-small {
+				top: 25rem;
+			}
+
+			@media @phone-xtra-small {
+				top: 30rem;
+			}
+
+			@media @phone-xtra-xtra-small {
+				top: 18rem;
+			}
+
 
 			.form-question, .find-neighborhood-form {
 				padding: 4rem 4rem 0rem;
@@ -334,9 +346,10 @@
 				}
 
 				@media @phone-xtra-small {
-					height: 30rem;
-					width: 25rem;
+					height: 20rem;
+					width: 20rem;
 				}
+
 
 				h5 {
 					color: @button-fg-color;

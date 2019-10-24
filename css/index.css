@@ -198,7 +198,7 @@ input:focus {
     padding: 1rem;
   }
 }
-@media (max-width: 375) {
+@media (max-width: 375px) {
   .navigation-container h1 {
     padding: 0rem;
   }
@@ -229,7 +229,7 @@ input:focus {
     background-color: transparent;
   }
 }
-@media (max-width: 375) {
+@media (max-width: 375px) {
   .navigation-container .navigation button {
     padding: 0;
   }
@@ -350,14 +350,28 @@ footer .navigation-container .navigation-footer .nav-item {
     margin-left: 0;
     position: relative;
     box-shadow: 0 0 0 transparent;
-    top: 27rem;
+    top: 20rem;
     width: 100%;
   }
 }
-@media (max-width: 375) {
+@media (max-width: 630px) {
   .header-container .header-image .call-to-action {
-    top: 20rem;
-    width: 90%;
+    top: 22rem;
+  }
+}
+@media (max-width: 500px) {
+  .header-container .header-image .call-to-action {
+    top: 25rem;
+  }
+}
+@media (max-width: 375px) {
+  .header-container .header-image .call-to-action {
+    top: 30rem;
+  }
+}
+@media (max-width: 320px) {
+  .header-container .header-image .call-to-action {
+    top: 18rem;
   }
 }
 .header-container .header-image .call-to-action .form-question,
@@ -632,10 +646,10 @@ footer .navigation-container .navigation-footer .nav-item {
     width: 35rem;
   }
 }
-@media (max-width: 375) {
+@media (max-width: 375px) {
   .container .success-section .success-container .success-card {
-    height: 30rem;
-    width: 25rem;
+    height: 20rem;
+    width: 20rem;
   }
 }
 .container .success-section .success-container .success-card h5 {
