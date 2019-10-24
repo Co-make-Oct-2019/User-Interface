@@ -198,6 +198,11 @@ input:focus {
     padding: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .navigation-container h1 {
+    padding: 0rem;
+  }
+}
 .navigation-container h1 a {
   text-decoration: none;
   color: white;
@@ -676,8 +681,8 @@ footer .navigation-container .navigation-footer .nav-item {
   text-decoration: underline;
 }
 .about-header {
-  height: 50vh;
-  padding: 5rem;
+  height: 50%;
+  padding: 20%;
   display: flex;
   justify-content: space-around;
 }
@@ -700,7 +705,12 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 1170px) {
   .about-header .about-header-text {
-    padding: 0;
+    padding: 20rem 0 0 0;
+  }
+}
+@media (max-width: 840px) {
+  .about-header .about-header-text {
+    padding: 10rem 0 5rem 0;
   }
 }
 @media (max-width: 630px) {
