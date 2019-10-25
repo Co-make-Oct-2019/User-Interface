@@ -784,6 +784,7 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 .about-header .container {
   margin-top: 0rem;
+  flex-direction: row;
 }
 .about-header .about-header-text {
   height: 100%;
