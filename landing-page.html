@@ -21,7 +21,7 @@
 			<a href="https://frontend.co-make.now.sh/signup" class="nav-item">Sign Up</a>
 			<a href="https://frontend.co-make.now.sh" class="nav-item">Log In</a>
 		</nav>
-		<button id="btn"><i class="fas fa-bars"></i></button>
+		<button class="button"><i class="fas fa-bars"></i></button>
 	</div> <!-- navigation container end here -->
 	<header class="header-container">
 		<div class="header-image" alt="clean street">
@@ -38,6 +38,15 @@
 	</header>
 
 	<div class="container">
+		<div class="call-to-action">
+			<div class="form-question">
+				<h2>Find out what your neighborhood wants to do.</h2>
+			</div>
+			<form class="find-neighborhood-form" action="/" method="post">
+				<input type="" name="search_neighborhoods" placeholder="Seattle, WA">
+				<button class="search-btn"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
 		<section class="card-section">
 			<h3>Explore co make</h3>
 			<div class="card-container">
@@ -112,7 +121,7 @@
 		<div class="navigation-container">
 			<div class="left-side">
 				<p>Copyright co make</p>
-				<p class="made-with-love">Made with love from everywhere</p>
+				<p class="made-with-love">Made with <i class="fas fa-heart"></i> from everywhere</p>
 			</div>
 			<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons</a>
 			<nav class="navigation-footer">
@@ -124,9 +133,4 @@
 		</div>
 	</footer>
 </body>
-<script type="text/javascript">
-	$('#btn').click(function() {
-		$("#header-nav").toggle()
-	})
-</script>
 </html>

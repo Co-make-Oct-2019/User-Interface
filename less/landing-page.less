@@ -37,24 +37,20 @@
 			box-shadow: 0 1.6rem 4rem black;
 
 			@media @phone-large {
-				margin-left: 0;
-				position: relative;
-				box-shadow: 0 0 0 transparent;
-				top: 27rem;
-				width: 100%;
-			}
-
-			@media @phone-small {
-				top: 17rem;
-			}
-
-			@media @phone-xtra-small {
-				top: 24rem;
+				display: none;
 			}
 
 
 			.form-question, .find-neighborhood-form {
 				padding: 4rem 4rem 0rem;
+			}
+
+			.form-question {
+				h2 {
+					@media @phone-large {
+						display: none;
+					}
+				}
 			}
 
 			.find-neighborhood-form {
@@ -67,7 +63,9 @@
 				padding-top: 0rem;
 
 				@media @phone-large {
-					align-items: stretch;
+					flex-direction: row;
+					justify-content: flex-start;
+					align-items: flex-start;
 				}
 
 
@@ -76,7 +74,7 @@
 					width: 42rem;
 
 					@media @phone-large {
-						width: 100%;
+						display: none
 					}
 				}
 
@@ -91,9 +89,13 @@
 					&:hover {
 						background-color: @button-bg-hover-color;
 					}
+
+					@media @phone-large {
+						display: none;
+					}
 				}
 			}
-		}
+		} // call-to-action
 	}
 } // header
 
@@ -143,9 +145,87 @@
 	margin-top: 1rem;
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
+
+	.call-to-action {
+
+		display: none;
+
+		@media @phone-large {
+			display: flex;
+			flex-direction: column;
+			margin-left: 0;
+			box-shadow: 0 0 0 transparent;
+			width: 100%;
+		}
+
+
+		.form-question, .find-neighborhood-form {
+			@media @phone-large {
+				padding: 1rem 1rem 0rem;
+			}
+		}
+
+		.form-question {
+			h2 {
+				@media @phone-large {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		.find-neighborhood-form {
+			
+			display: none;
+
+			@media @phone-large {
+				//height: 66vh;
+				display: flex;
+
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+
+
+			input {
+			
+				display: none;
+
+				@media @phone-large {
+					display: block;
+					height: 5rem;
+					width: 80%;
+					border-radius: 0;
+					border-right: 0 none transparent;
+				}
+			}
+
+			button {
+
+				display: none;
+
+				@media @phone-large {
+					display: block;
+					height: 5rem;
+					width: 10rem;
+					border-radius: 0.3rem;
+					border: 0px solid white;
+					color: @button-fg-color;
+					background-color: @button-bg-color;
+					border-left: 0 none transparent;
+					border-radius: 0 0.3rem 0.3rem 0;
+
+					&:hover {
+						background-color: @button-bg-hover-color;
+					}
+				}
+			}
+		}
+	}
 
 	.card-section {
 		height: 35rem;
