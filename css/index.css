@@ -347,26 +347,17 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 840px) {
   .header-container .header-image .call-to-action {
-    margin-left: 0;
-    position: relative;
-    box-shadow: 0 0 0 transparent;
-    top: 27rem;
-    width: 100%;
-  }
-}
-@media (max-width: 498px) {
-  .header-container .header-image .call-to-action {
-    top: 17rem;
-  }
-}
-@media (max-width: 375px) {
-  .header-container .header-image .call-to-action {
-    top: 24rem;
+    display: none;
   }
 }
 .header-container .header-image .call-to-action .form-question,
 .header-container .header-image .call-to-action .find-neighborhood-form {
   padding: 4rem 4rem 0rem;
+}
+@media (max-width: 840px) {
+  .header-container .header-image .call-to-action .form-question h2 {
+    display: none;
+  }
 }
 .header-container .header-image .call-to-action .find-neighborhood-form {
   height: 66vh;
@@ -378,7 +369,9 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 840px) {
   .header-container .header-image .call-to-action .find-neighborhood-form {
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 .header-container .header-image .call-to-action .find-neighborhood-form input {
@@ -387,7 +380,7 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 @media (max-width: 840px) {
   .header-container .header-image .call-to-action .find-neighborhood-form input {
-    width: 100%;
+    display: none;
   }
 }
 .header-container .header-image .call-to-action .find-neighborhood-form button {
@@ -400,6 +393,11 @@ footer .navigation-container .navigation-footer .nav-item {
 }
 .header-container .header-image .call-to-action .find-neighborhood-form button:hover {
   background-color: seagreen;
+}
+@media (max-width: 840px) {
+  .header-container .header-image .call-to-action .find-neighborhood-form button {
+    display: none;
+  }
 }
 .get-involved {
   width: 100vw;
@@ -438,8 +436,74 @@ footer .navigation-container .navigation-footer .nav-item {
 .container {
   margin-top: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.container .call-to-action {
+  display: none;
+}
+@media (max-width: 840px) {
+  .container .call-to-action {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    box-shadow: 0 0 0 transparent;
+    width: 100%;
+  }
+}
+@media (max-width: 840px) {
+  .container .call-to-action .form-question,
+  .container .call-to-action .find-neighborhood-form {
+    padding: 1rem 1rem 0rem;
+  }
+}
+@media (max-width: 840px) {
+  .container .call-to-action .form-question h2 {
+    font-size: 1rem;
+  }
+}
+.container .call-to-action .find-neighborhood-form {
+  display: none;
+}
+@media (max-width: 840px) {
+  .container .call-to-action .find-neighborhood-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.container .call-to-action .find-neighborhood-form input {
+  display: none;
+}
+@media (max-width: 840px) {
+  .container .call-to-action .find-neighborhood-form input {
+    display: block;
+    height: 5rem;
+    width: 80%;
+    border-radius: 0;
+    border-right: 0 none transparent;
+  }
+}
+.container .call-to-action .find-neighborhood-form button {
+  display: none;
+}
+@media (max-width: 840px) {
+  .container .call-to-action .find-neighborhood-form button {
+    display: block;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 0.3rem;
+    border: 0px solid white;
+    color: white;
+    background-color: mediumseagreen;
+    border-left: 0 none transparent;
+    border-radius: 0 0.3rem 0.3rem 0;
+  }
+  .container .call-to-action .find-neighborhood-form button:hover {
+    background-color: seagreen;
+  }
 }
 .container .card-section {
   height: 35rem;
