@@ -226,14 +226,14 @@ input:focus {
 }
 @media (max-width: 1170px) {
   .navigation-container .navigation .nav-item {
-    display: none;
+    display: none !important;
   }
 }
-.navigation-container button {
+.navigation-container .button {
   display: none;
 }
 @media (max-width: 1170px) {
-  .navigation-container button {
+  .navigation-container .button {
     display: block;
     padding: 2.8rem;
     font-size: 2.8rem;
@@ -243,7 +243,7 @@ input:focus {
   }
 }
 @media (max-width: 375px) {
-  .navigation-container button {
+  .navigation-container .button {
     padding: 0;
   }
 }
