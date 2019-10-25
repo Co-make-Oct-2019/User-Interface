@@ -216,24 +216,6 @@ input:focus {
   font-size: 1.8rem;
   text-decoration: none;
 }
-.navigation-container .navigation button {
-  display: none;
-}
-@media (max-width: 1170px) {
-  .navigation-container .navigation button {
-    display: block;
-    padding: 2.8rem;
-    font-size: 2.8rem;
-    border: none;
-    color: white;
-    background-color: transparent;
-  }
-}
-@media (max-width: 375px) {
-  .navigation-container .navigation button {
-    padding: 0;
-  }
-}
 .navigation-container .navigation .nav-item {
   padding: 2.8rem;
   margin: 0 1rem 0 0;
@@ -244,7 +226,25 @@ input:focus {
 }
 @media (max-width: 1170px) {
   .navigation-container .navigation .nav-item {
-    visibility: hidden;
+    display: none;
+  }
+}
+.navigation-container button {
+  display: none;
+}
+@media (max-width: 1170px) {
+  .navigation-container button {
+    display: block;
+    padding: 2.8rem;
+    font-size: 2.8rem;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+}
+@media (max-width: 375px) {
+  .navigation-container button {
+    padding: 0;
   }
 }
 @media (max-width: 630px) {
@@ -354,21 +354,14 @@ footer .navigation-container .navigation-footer .nav-item {
     width: 100%;
   }
 }
-@media (max-width: 630px) {
-}
-@media (max-width: 500px) {
+@media (max-width: 498px) {
   .header-container .header-image .call-to-action {
-    top: 25rem;
+    top: 17rem;
   }
 }
 @media (max-width: 375px) {
   .header-container .header-image .call-to-action {
-    top: 30rem;
-  }
-}
-@media (max-width: 320px) {
-  .header-container .header-image .call-to-action {
-    top: 18rem;
+    top: 24rem;
   }
 }
 .header-container .header-image .call-to-action .form-question,
@@ -560,7 +553,7 @@ footer .navigation-container .navigation-footer .nav-item {
     font-size: 1.3rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 498px) {
   .container .card-section .card-container .card h5 {
     padding: 4rem 2rem;
     font-size: 1.2rem;
