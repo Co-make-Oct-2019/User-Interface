@@ -35,23 +35,6 @@
 			text-decoration: none;
 		}
 
-		button {
-			display: none;
-
-			@media @tablet {
-				display: block;
-				padding: 2.8rem;
-				font-size: @button-font-size;
-				border: none;
-				color: @button-fg-color;
-				background-color: transparent;
-			}
-
-			@media @phone-xtra-small {
-				padding: 0;
-			}
-		}
-
 		.nav-item {
 			padding: 2.8rem;
 			margin: 0 1rem 0 0;
@@ -62,9 +45,27 @@
 			}
 
 			@media @tablet {
-				visibility: hidden;
+				display: none;
 			}
 
 		} // nav-item
 	} // navigation
+
+	button {
+		display: none;
+
+		@media @tablet {
+			display: block;
+			padding: 2.8rem;
+			font-size: @button-font-size;
+			border: none;
+			color: @button-fg-color;
+			background-color: transparent;
+		}
+
+		@media @phone-xtra-small {
+			padding: 0;
+		}
+	}// button
+
 } // navigation-container

@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu|Open+Sans:700" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/10453cf20e.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,19 +15,19 @@
 <body>
 	<div class="navigation-container">
 		<h1><a href="#">co make</a></h1>
-		<nav class="navigation">
+		<nav class="navigation" id="header-nav">
 			<a href="#" class="nav-item">Post an issue in your neighborhood</a>
 			<a href="#" class="nav-item">Help</a>
 			<a href="https://frontend.co-make.now.sh/signup" class="nav-item">Sign Up</a>
 			<a href="https://frontend.co-make.now.sh" class="nav-item">Log In</a>
-			<button onclick="toggleMenu('nav-item')"><i class="fas fa-bars"></i></button>
 		</nav>
+		<button id="btn"><i class="fas fa-bars"></i></button>
 	</div> <!-- navigation container end here -->
 	<header class="header-container">
 		<div class="header-image" alt="clean street">
 			<div class="call-to-action">
 				<div class="form-question">
-					<h2>Find what your neighborhood wants to do.</h2>
+					<h2>Find out what your neighborhood wants to do.</h2>
 				</div>
 				<form class="find-neighborhood-form" action="/" method="post">
 					<input type="" name="search_neighborhoods" placeholder="Seattle, WA">
@@ -124,11 +125,8 @@
 	</footer>
 </body>
 <script type="text/javascript">
-	
-	function toggleMenu(identifier) {
-		const menu = document.getElementsByClassName("nav-item");
-		menu.style.visibility = menu.style.visibility == "none" ? "visible" : "none";
-	}
-
+	$('#btn').click(function() {
+		$("#header-nav").toggle()
+	})
 </script>
 </html>
